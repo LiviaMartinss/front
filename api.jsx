@@ -1,5 +1,4 @@
-export const API_URL = 'http://localhost:3000/api/v2';
-// export const API_URL = 'https://pokeapi-jlft.onrender.com/api/v2';
+export const API_URL = import.meta.env.VITE_API_URL;
 
 export function GET_POKEMON(pokemonName) {
   return {
